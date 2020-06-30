@@ -1,0 +1,10 @@
+Iocomp.Instrumentation.Professional.Panel, Iocomp.Instrumentation.WF45.Pro, Version=4.0.6.14360, Culture=neutral, PublicKeyToken=a217a64fde564c89
+Iocomp.Instrumentation.Plotting.Plot, Iocomp.Instrumentation.WF45.Plot, Version=4.0.6.14358, Culture=neutral, PublicKeyToken=a217a64fde564c89
+Iocomp.Instrumentation.Standard.Knob, Iocomp.Instrumentation.WF45.Std, Version=4.0.6.14362, Culture=neutral, PublicKeyToken=a217a64fde564c89
+Iocomp.Instrumentation.Professional.SwitchLever, Iocomp.Instrumentation.WF45.Pro, Version=4.0.6.14360, Culture=neutral, PublicKeyToken=a217a64fde564c89
+Iocomp.Instrumentation.Professional.LedArrow, Iocomp.Instrumentation.WF45.Pro, Version=4.0.6.14360, Culture=neutral, PublicKeyToken=a217a64fde564c89
+FarPoint.Win.Spread.FpSpread, FarPoint.Win.Spread, Version=9.35.20161.0, Culture=neutral, PublicKeyToken=327c3516b1b18457
+Iocomp.Instrumentation.Standard.Led, Iocomp.Instrumentation.WF45.Std, Version=4.0.6.14362, Culture=neutral, PublicKeyToken=a217a64fde564c89
+Iocomp.Instrumentation.Standard.SevenSegmentInteger, Iocomp.Instrumentation.WF45.Std, Version=4.0.6.14362, Culture=neutral, PublicKeyToken=a217a64fde564c89
+Iocomp.Instrumentation.Standard.Label, Iocomp.Instrumentation.WF45.Std, Version=4.0.6.14362, Culture=neutral, PublicKeyToken=a217a64fde564c89
+Iocomp.Instrumentation.Standard.SevenSegmentAnalog, Iocomp.Instrumentation.WF45.Std, Version=4.0.6.14362, Culture=neutral, PublicKeyToken=a217a64fde564c89

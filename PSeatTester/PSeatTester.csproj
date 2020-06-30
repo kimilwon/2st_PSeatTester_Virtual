@@ -1,0 +1,638 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6E71A746-7A96-4223-908F-30A2109F0C8A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PSeatTester</RootNamespace>
+    <AssemblyName>PSeatTester</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>USB Drive.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FarPoint.CalcEngine, Version=9.35.20161.0, Culture=neutral, PublicKeyToken=327c3516b1b18457" />
+    <Reference Include="FarPoint.Excel, Version=9.35.20161.0, Culture=neutral, PublicKeyToken=327c3516b1b18457" />
+    <Reference Include="FarPoint.Localization, Version=9.20.20161.0, Culture=neutral, PublicKeyToken=327c3516b1b18457" />
+    <Reference Include="FarPoint.PDF, Version=9.35.20161.0, Culture=neutral, PublicKeyToken=327c3516b1b18457" />
+    <Reference Include="FarPoint.PluginCalendar.WinForms, Version=9.35.20161.0, Culture=neutral, PublicKeyToken=327c3516b1b18457" />
+    <Reference Include="FarPoint.Win, Version=9.35.20161.0, Culture=neutral, PublicKeyToken=327c3516b1b18457" />
+    <Reference Include="FarPoint.Win.Chart, Version=9.35.20161.0, Culture=neutral, PublicKeyToken=327c3516b1b18457" />
+    <Reference Include="FarPoint.Win.Spread, Version=9.35.20161.0, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="GrapeCity.Win.PluginInputMan, Version=9.35.20161.0, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="Iocomp.Instrumentation.WF45.Common, Version=4.0.6.14325, Culture=neutral, PublicKeyToken=a217a64fde564c89" />
+    <Reference Include="Iocomp.Instrumentation.WF45.Plot, Version=4.0.6.14358, Culture=neutral, PublicKeyToken=a217a64fde564c89" />
+    <Reference Include="Iocomp.Instrumentation.WF45.Pro, Version=4.0.6.14360, Culture=neutral, PublicKeyToken=a217a64fde564c89" />
+    <Reference Include="Iocomp.Instrumentation.WF45.Std, Version=4.0.6.14362, Culture=neutral, PublicKeyToken=a217a64fde564c89" />
+    <Reference Include="log4net">
+      <HintPath>DLL\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="SDKNetLib">
+      <HintPath>DLL\SDKNetLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Unme.Common">
+      <HintPath>DLL\Unme.Common.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CanControl.cs" />
+    <Compile Include="CanMap.cs" />
+    <Compile Include="CloseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CloseForm.designer.cs">
+      <DependentUpon>CloseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ComboBoxItem.cs" />
+    <Compile Include="Common.cs" />
+    <Compile Include="DelayForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DelayForm.designer.cs">
+      <DependentUpon>DelayForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DobulbufferComponent.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="IOControl.cs" />
+    <Compile Include="MES_Control.cs" />
+    <Compile Include="PanelMeter.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="SpecSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpecSetting.Designer.cs">
+      <DependentUpon>SpecSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frame_Dlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frame_Dlg.designer.cs">
+      <DependentUpon>Frame_Dlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalFrameTableHandler.cs" />
+    <Compile Include="ImageButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="iniClass.cs" />
+    <Compile Include="LedBulb.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LinControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PasswordCheckForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PasswordCheckForm.designer.cs">
+      <DependentUpon>PasswordCheckForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PasswordSetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PasswordSetForm.designer.cs">
+      <DependentUpon>PasswordSetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PCANBasic.cs" />
+    <Compile Include="PLinApi.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SelfTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelfTest.Designer.cs">
+      <DependentUpon>SelfTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SoundClass.cs" />
+    <Compile Include="SystemSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemSet.Designer.cs">
+      <DependentUpon>SystemSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UniDAQ.cs" />
+    <Compile Include="var.cs" />
+    <EmbeddedResource Include="CloseForm.resx">
+      <DependentUpon>CloseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DelayForm.resx">
+      <DependentUpon>DelayForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MES_Control.resx">
+      <DependentUpon>MES_Control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SpecSetting.resx">
+      <DependentUpon>SpecSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frame_Dlg.resx">
+      <DependentUpon>Frame_Dlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordCheckForm.resx">
+      <DependentUpon>PasswordCheckForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordSetForm.resx">
+      <DependentUpon>PasswordSetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SelfTest.resx">
+      <DependentUpon>SelfTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemSet.resx">
+      <DependentUpon>SystemSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\02 - PDF Files White.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\03 - Excel Blue.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\04 - Excel White.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\12 - AI Files White.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\0041.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\79.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\185.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\248.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\5513.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\5514.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\5546.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\android-ico.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Audio Symbol 02.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Battery Options.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Battery.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Bitlocker Encryption.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Bluetooth.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Camera.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Card reader %28black%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\CD.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Change Disk.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Children Restricted.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Configurations.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Contacts Blue.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Contacts White.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Contacts.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Control Panel.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Cord4.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Danger Shield.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Date.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Document.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Documents.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Downloads.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Eject.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Etc0149.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Explorer.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Favorites.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Firewall.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Flash drive %28black%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Flash drive %28green%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Flash drive %28pink%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Flash Live Icon 12.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Floppy Drive.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Flyer.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Folder - Home.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Gaming Console.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Genuine Advantage.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Good.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\HDD %28blue%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\HDD %28yellow%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\HDD Firewire.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\HDD USB.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\imageres_22_11.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\imageres_189_11.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Installation Package.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Internal Drive.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Joystick.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Keyboard.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Keys.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Loudspeaker.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Memory card SD.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Microsoft Management Console.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Mobility Options.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\mobsync.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Mouse.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\mspaint.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Music.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\My Documents.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\My Documents2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\My PC 01.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Nano Black.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\ncRadio.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Net Drive Disconnected.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Network.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\notebook-ico.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Notepad.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Offline Web Pages.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Pad Lock.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Parental.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\PCI-card.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\PDA.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Performance Report.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Performance.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Pic.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\PLAYLIST.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Printer.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Private Badge.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\ReadyBoost.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Recent Items.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Recycle Bin Full.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Register Windows.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\RemoteControl.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Restricted.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Right.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Safe Shield.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Search.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Security Center.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Smartcard.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Start Menu.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Stop.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Sync.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\System Configurations.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Tablet PC.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Tablet Pen.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Taskmgr.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Typing.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\UPS.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\USB Drive.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\USB logo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\User Account Control.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\User Account.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\User Folder.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Warning Shield.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Welcome Center.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Windows Journal.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Windows Mail.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Windows Sidebar.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Wireless Adapter.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Wordpad file.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Wordpad.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Wrong.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\ZIP Drive Error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\시스템 종료_0_4.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxXtremeSuiteControls">
+      <Guid>{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}</Guid>
+      <VersionMajor>15</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="XtremeSuiteControls">
+      <Guid>{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}</Guid>
+      <VersionMajor>15</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Pad_Lock2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Pad_Unlock1 %281%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Pad_Unlock1 %282%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Pad_Lock3.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Pad_Unlock_36Pixel1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Pad_Unlock_36Pixel2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON_이것만 쓰자\Accessibility Warning.ico" />
+    <Content Include="USB Drive.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

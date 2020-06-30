@@ -1,0 +1,586 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="My Documents2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\My Documents2.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Flyer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Flyer.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Restricted" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Restricted.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Favorites" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Favorites.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Battery" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Battery.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Printer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Printer.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pad_Lock3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Pad_Lock3.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Taskmgr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Taskmgr.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="User Folder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\User Folder.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Security Center" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Security Center.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Start Menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Start Menu.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HDD USB" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\HDD USB.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Contacts Blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Contacts Blue.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\CD.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="My Documents" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\My Documents.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="02 - PDF Files White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\02 - PDF Files White.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Welcome Center" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Welcome Center.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Configurations" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Configurations.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SAppCaptionError" xml:space="preserve">
+    <value>P/Seat 검사기 - Error</value>
+  </data>
+  <data name="Wrong" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Wrong.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mobility Options" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Mobility Options.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Floppy Drive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Floppy Drive.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="5513" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\5513.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SHardwarePLIN" xml:space="preserve">
+    <value>PLIN-USB</value>
+  </data>
+  <data name="Change Disk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Change Disk.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Wordpad" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Wordpad.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sync" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Sync.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Recycle Bin Full" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Recycle Bin Full.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imageres_189_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\imageres_189_11.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReadyBoost" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\ReadyBoost.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SLinDirectionSubscriber" xml:space="preserve">
+    <value>Subscriber</value>
+  </data>
+  <data name="Bitlocker Encryption" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Bitlocker Encryption.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Parental" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Parental.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PLAYLIST" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\PLAYLIST.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SLINStatusSleep" xml:space="preserve">
+    <value>Bus: Sleep</value>
+  </data>
+  <data name="Pad_Unlock_36Pixel1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Pad_Unlock_36Pixel1.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pad_Unlock_36Pixel2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Pad_Unlock_36Pixel2.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SLinDirectionPublisher" xml:space="preserve">
+    <value>Publisher</value>
+  </data>
+  <data name="Performance Report" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Performance Report.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pad Lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Pad Lock.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ncRadio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\ncRadio.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SAppCaption" xml:space="preserve">
+    <value>P/Seat 검사기</value>
+  </data>
+  <data name="Genuine Advantage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Genuine Advantage.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HDD Firewire" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\HDD Firewire.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Explorer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Explorer.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mspaint" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\mspaint.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SWriteAsSlave" xml:space="preserve">
+    <value>Publish</value>
+  </data>
+  <data name="SLINStatusShortGround" xml:space="preserve">
+    <value>Bus-Line: Shorted Ground</value>
+  </data>
+  <data name="SLINStatusActive" xml:space="preserve">
+    <value>Bus: Active</value>
+  </data>
+  <data name="Audio Symbol 02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Audio Symbol 02.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="03 - Excel Blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\03 - Excel Blue.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Flash Live Icon 12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Flash Live Icon 12.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PDA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\PDA.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Recent Items" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Recent Items.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Notepad" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Notepad.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SLinCSTClassic" xml:space="preserve">
+    <value>Classic</value>
+  </data>
+  <data name="Contacts White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Contacts White.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Nano Black" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Nano Black.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Flash drive (black)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Flash drive (black).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Wireless Adapter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Wireless Adapter.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Offline Web Pages" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Offline Web Pages.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Keyboard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Keyboard.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tablet Pen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Tablet Pen.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SLINStatusNotInit" xml:space="preserve">
+    <value>Hardware: Not Initialized</value>
+  </data>
+  <data name="My PC 01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\My PC 01.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mobsync" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\mobsync.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="System Configurations" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\System Configurations.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Typing" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Typing.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Danger Shield" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Danger Shield.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pad_Unlock1 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Pad_Unlock1 (1).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cord4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Cord4.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Network" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Network.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Contacts" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Contacts.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Windows Sidebar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Windows Sidebar.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Joystick" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Joystick.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SLinCSTEnhanced" xml:space="preserve">
+    <value>Enhanced</value>
+  </data>
+  <data name="Keys" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Keys.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Internal Drive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Internal Drive.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Loudspeaker" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Loudspeaker.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="notebook-ico" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\notebook-ico.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="시스템 종료_0_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\시스템 종료_0_4.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Net Drive Disconnected" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Net Drive Disconnected.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tablet PC" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Tablet PC.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="5546" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\5546.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imageres_22_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\imageres_22_11.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pad_Unlock1 (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Pad_Unlock1 (2).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mouse" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Mouse.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Firewall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Firewall.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="04 - Excel White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\04 - Excel White.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Microsoft Management Console" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Microsoft Management Console.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Pic.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HDD (blue)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\HDD (blue).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Eject" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Eject.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Card reader (black)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Card reader (black).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SHardwareTypeUnkown" xml:space="preserve">
+    <value>Unknown</value>
+  </data>
+  <data name="SLinCSTCustom" xml:space="preserve">
+    <value>Custom</value>
+  </data>
+  <data name="UPS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\UPS.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="79" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\79.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Installation Package" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Installation Package.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="USB Drive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\USB Drive.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SLINStatusBaudDetect" xml:space="preserve">
+    <value>Hardware: Baudrate Detection</value>
+  </data>
+  <data name="SPLinClientName" xml:space="preserve">
+    <value>PSeatTester</value>
+  </data>
+  <data name="Private Badge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Private Badge.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Music" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Music.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SHardwareTypeLINFD" xml:space="preserve">
+    <value>PCAN-USB Pro FD</value>
+  </data>
+  <data name="PCI-card" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\PCI-card.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ZIP Drive Error" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\ZIP Drive Error.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Search" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Search.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Memory card SD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Memory card SD.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Register Windows" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Register Windows.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Camera" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Camera.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Etc0149" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Etc0149.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Gaming Console" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Gaming Console.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="User Account" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\User Account.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Error" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Error.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SLinDirectionDisabled" xml:space="preserve">
+    <value>Disabled</value>
+  </data>
+  <data name="Windows Mail" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Windows Mail.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="12 - AI Files White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\12 - AI Files White.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Flash drive (green)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Flash drive (green).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Right" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Right.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="USB logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\USB logo.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="248" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\248.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="185" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\185.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Flash drive (pink)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Flash drive (pink).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Documents" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Documents.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pad_Lock2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Pad_Lock2.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="5514" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\5514.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HDD (yellow)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\HDD (yellow).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Delete.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Stop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Stop.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bluetooth" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Bluetooth.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Control Panel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Control Panel.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SLinDirectionAuto" xml:space="preserve">
+    <value>Subscriber Automatic Length</value>
+  </data>
+  <data name="Safe Shield" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Safe Shield.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SWriteAsMaster" xml:space="preserve">
+    <value>Transmit</value>
+  </data>
+  <data name="SHardwareNothingFound" xml:space="preserve">
+    <value>&lt;No hardware found&gt;</value>
+  </data>
+  <data name="Smartcard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Smartcard.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Document" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Document.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RemoteControl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\RemoteControl.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Children Restricted" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Children Restricted.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Date" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Date.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Good" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Good.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="User Account Control" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\User Account Control.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Battery Options" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Battery Options.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Wordpad file" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Wordpad file.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Warning Shield" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Warning Shield.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SHardwareTypeLIN" xml:space="preserve">
+    <value>PCAN-USB Pro</value>
+  </data>
+  <data name="android-ico" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\android-ico.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Windows Journal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Windows Journal.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Performance" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Performance.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="0041" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\0041.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Folder - Home" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Folder - Home.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Downloads" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Downloads.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SLinCSTAuto" xml:space="preserve">
+    <value>Auto</value>
+  </data>
+  <data name="Accessibility Warning" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ICON_이것만 쓰자\Accessibility Warning.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>
